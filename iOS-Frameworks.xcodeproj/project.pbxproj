@@ -13,6 +13,10 @@
 		DADC56671D65B6FC0050F737 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADC56651D65B6FC0050F737 /* Main.storyboard */; };
 		DADC56691D65B6FC0050F737 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DADC56681D65B6FC0050F737 /* Assets.xcassets */; };
 		DADC566C1D65B6FC0050F737 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADC566A1D65B6FC0050F737 /* LaunchScreen.storyboard */; };
+		DADC56751D65B7080050F737 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DADC56741D65B7080050F737 /* Accounts.framework */; };
+		DADC56791D65B84F0050F737 /* FrameworkDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DADC56781D65B84F0050F737 /* FrameworkDataSource.m */; };
+		DADC567D1D65BA510050F737 /* AccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADC567B1D65BA510050F737 /* AccountsViewController.m */; };
+		DADC567E1D65BA510050F737 /* AccountsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DADC567C1D65BA510050F737 /* AccountsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		DADC56681D65B6FC0050F737 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DADC566B1D65B6FC0050F737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DADC566D1D65B6FC0050F737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DADC56741D65B7080050F737 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		DADC56771D65B84F0050F737 /* FrameworkDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrameworkDataSource.h; sourceTree = "<group>"; };
+		DADC56781D65B84F0050F737 /* FrameworkDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrameworkDataSource.m; sourceTree = "<group>"; };
+		DADC567A1D65BA510050F737 /* AccountsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountsViewController.h; sourceTree = "<group>"; };
+		DADC567B1D65BA510050F737 /* AccountsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountsViewController.m; sourceTree = "<group>"; };
+		DADC567C1D65BA510050F737 /* AccountsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADC56751D65B7080050F737 /* Accounts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +55,7 @@
 			children = (
 				DADC565B1D65B6FC0050F737 /* iOS-Frameworks */,
 				DADC565A1D65B6FC0050F737 /* Products */,
+				DADC56731D65B7080050F737 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +70,13 @@
 		DADC565B1D65B6FC0050F737 /* iOS-Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DADC56761D65B7270050F737 /* Accounts */,
 				DADC565F1D65B6FC0050F737 /* AppDelegate.h */,
 				DADC56601D65B6FC0050F737 /* AppDelegate.m */,
 				DADC56621D65B6FC0050F737 /* ViewController.h */,
 				DADC56631D65B6FC0050F737 /* ViewController.m */,
+				DADC56771D65B84F0050F737 /* FrameworkDataSource.h */,
+				DADC56781D65B84F0050F737 /* FrameworkDataSource.m */,
 				DADC56651D65B6FC0050F737 /* Main.storyboard */,
 				DADC56681D65B6FC0050F737 /* Assets.xcassets */,
 				DADC566A1D65B6FC0050F737 /* LaunchScreen.storyboard */,
@@ -78,6 +93,24 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		DADC56731D65B7080050F737 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DADC56741D65B7080050F737 /* Accounts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DADC56761D65B7270050F737 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				DADC567A1D65BA510050F737 /* AccountsViewController.h */,
+				DADC567B1D65BA510050F737 /* AccountsViewController.m */,
+				DADC567C1D65BA510050F737 /* AccountsViewController.xib */,
+			);
+			path = Accounts;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -140,6 +173,7 @@
 			files = (
 				DADC566C1D65B6FC0050F737 /* LaunchScreen.storyboard in Resources */,
 				DADC56691D65B6FC0050F737 /* Assets.xcassets in Resources */,
+				DADC567E1D65BA510050F737 /* AccountsViewController.xib in Resources */,
 				DADC56671D65B6FC0050F737 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,8 +186,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DADC56641D65B6FC0050F737 /* ViewController.m in Sources */,
+				DADC56791D65B84F0050F737 /* FrameworkDataSource.m in Sources */,
 				DADC56611D65B6FC0050F737 /* AppDelegate.m in Sources */,
 				DADC565E1D65B6FC0050F737 /* main.m in Sources */,
+				DADC567D1D65BA510050F737 /* AccountsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
