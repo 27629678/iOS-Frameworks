@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class UIViewController;
+
 @interface Framework : NSObject
 
 @property (nonatomic, strong) NSString* name;
-@property (nonatomic, assign) Class targetClass;
+
+- (UIViewController *)viewController;
 
 + (instancetype)frameworkWithName:(NSString *)name target:(Class)target;
 

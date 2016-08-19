@@ -26,6 +26,8 @@
     self.title = @"Frameworks";
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] init];
+    self.navigationItem.backBarButtonItem.title = @"Back";
     self.frameworks = [[FrameworkDataSource sharedInstance] allFrameworks];
 }
 
@@ -56,6 +58,9 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    Framework* framework = self.frameworks[indexPath.row];
+    [self.navigationController showViewController:framework.viewController sender:nil];
 }
 
 

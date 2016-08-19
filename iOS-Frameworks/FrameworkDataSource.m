@@ -9,6 +9,12 @@
 #import "FrameworkDataSource.h"
 #import "AccountsViewController.h"
 
+@interface Framework ()
+
+@property (nonatomic, assign) Class targetClass;
+
+@end
+
 @implementation Framework
 
 + (instancetype)frameworkWithName:(NSString *)name target:(__unsafe_unretained Class)target
@@ -18,6 +24,12 @@
     instance.targetClass = target;
     
     return instance;
+}
+
+- (UIViewController *)viewController
+{
+    return [[self.targetClass alloc] initWithNibName:NSStringFromClass(self.targetClass)
+                                              bundle:nil];
 }
 
 @end        // Framework
