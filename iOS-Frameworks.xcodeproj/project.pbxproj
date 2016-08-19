@@ -54,6 +54,7 @@
 		DADC567B1D65BA510050F737 /* AccountsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountsViewController.m; sourceTree = "<group>"; };
 		DADC567C1D65BA510050F737 /* AccountsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountsViewController.xib; sourceTree = "<group>"; };
 		DAF494A71D66E2E100E73136 /* iOS-Frameworks.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS-Frameworks.pch"; sourceTree = "<group>"; };
+		DAF494A81D66EEE800E73136 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +124,7 @@
 				DADC56681D65B6FC0050F737 /* Assets.xcassets */,
 				DADC566A1D65B6FC0050F737 /* LaunchScreen.storyboard */,
 				DADC566D1D65B6FC0050F737 /* Info.plist */,
+				DAF494A81D66EEE800E73136 /* MyPlayground.playground */,
 				DADC565C1D65B6FC0050F737 /* Supporting Files */,
 				DAF494A71D66E2E100E73136 /* iOS-Frameworks.pch */,
 			);
