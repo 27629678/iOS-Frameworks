@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CDEBAAE10C89FDD6CA321A30 /* libPods-iOS-Frameworks.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8E688BF5957EB54A046276 /* libPods-iOS-Frameworks.a */; };
 		DAC8D9711D66A69800374403 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC8D9701D66A69800374403 /* UIKit.framework */; };
+		DACFD8771D66B3E700D12C40 /* Accounts.png in Resources */ = {isa = PBXBuildFile; fileRef = DACFD8751D66B3E700D12C40 /* Accounts.png */; };
+		DACFD8781D66B3E700D12C40 /* Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = DACFD8761D66B3E700D12C40 /* Facebook.png */; };
 		DADC565E1D65B6FC0050F737 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DADC565D1D65B6FC0050F737 /* main.m */; };
 		DADC56611D65B6FC0050F737 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DADC56601D65B6FC0050F737 /* AppDelegate.m */; };
 		DADC56641D65B6FC0050F737 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADC56631D65B6FC0050F737 /* ViewController.m */; };
@@ -26,6 +28,8 @@
 		89BABA19F675CA5D3A390012 /* Pods-iOS-Frameworks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Frameworks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-Frameworks/Pods-iOS-Frameworks.debug.xcconfig"; sourceTree = "<group>"; };
 		BF8E688BF5957EB54A046276 /* libPods-iOS-Frameworks.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-Frameworks.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAC8D9701D66A69800374403 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DACFD8751D66B3E700D12C40 /* Accounts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Accounts.png; sourceTree = "<group>"; };
+		DACFD8761D66B3E700D12C40 /* Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook.png; sourceTree = "<group>"; };
 		DADC56591D65B6FC0050F737 /* iOS-Frameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Frameworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADC565D1D65B6FC0050F737 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DADC565F1D65B6FC0050F737 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 		DADC56761D65B7270050F737 /* Accounts */ = {
 			isa = PBXGroup;
 			children = (
+				DACFD8751D66B3E700D12C40 /* Accounts.png */,
+				DACFD8761D66B3E700D12C40 /* Facebook.png */,
 				DADC567A1D65BA510050F737 /* AccountsViewController.h */,
 				DADC567B1D65BA510050F737 /* AccountsViewController.m */,
 				DADC567C1D65BA510050F737 /* AccountsViewController.xib */,
@@ -195,7 +201,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DADC566C1D65B6FC0050F737 /* LaunchScreen.storyboard in Resources */,
+				DACFD8771D66B3E700D12C40 /* Accounts.png in Resources */,
 				DADC56691D65B6FC0050F737 /* Assets.xcassets in Resources */,
+				DACFD8781D66B3E700D12C40 /* Facebook.png in Resources */,
 				DADC567E1D65BA510050F737 /* AccountsViewController.xib in Resources */,
 				DADC56671D65B6FC0050F737 /* Main.storyboard in Resources */,
 			);

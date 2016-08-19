@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -14,7 +14,39 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Facebook.png" translatesAutoresizingMaskIntoConstraints="NO" id="pvY-aM-2D5"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Accounts.png" translatesAutoresizingMaskIntoConstraints="NO" id="Md8-ZN-DZG">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="174" id="m3r-Yl-UIn"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90e-WJ-qgz">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="68" id="Ch5-Ep-rpT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="90e-WJ-qgz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3Tt-gk-g2c"/>
+                <constraint firstItem="Md8-ZN-DZG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="4Ww-3c-DOV"/>
+                <constraint firstAttribute="bottom" secondItem="pvY-aM-2D5" secondAttribute="bottom" constant="20" id="DJr-7o-j7l"/>
+                <constraint firstItem="Md8-ZN-DZG" firstAttribute="top" secondItem="90e-WJ-qgz" secondAttribute="bottom" constant="24" id="F7J-8l-Xhn"/>
+                <constraint firstItem="Md8-ZN-DZG" firstAttribute="trailing" secondItem="pvY-aM-2D5" secondAttribute="trailing" id="FwJ-NK-bai"/>
+                <constraint firstItem="pvY-aM-2D5" firstAttribute="top" secondItem="Md8-ZN-DZG" secondAttribute="bottom" constant="53" id="L5U-32-xfO"/>
+                <constraint firstItem="90e-WJ-qgz" firstAttribute="centerX" secondItem="Md8-ZN-DZG" secondAttribute="centerX" id="dIN-0v-RvY"/>
+                <constraint firstItem="Md8-ZN-DZG" firstAttribute="leading" secondItem="pvY-aM-2D5" secondAttribute="leading" id="qnV-cd-jJQ"/>
+                <constraint firstItem="Md8-ZN-DZG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="vJW-sn-GNe"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="Accounts.png" width="640" height="356"/>
+        <image name="Facebook.png" width="634" height="320"/>
+    </resources>
 </document>
