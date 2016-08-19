@@ -7,6 +7,7 @@
 //
 
 #import "FrameworkDataSource.h"
+
 #import "AccountsViewController.h"
 
 @interface Framework ()
@@ -28,8 +29,9 @@
 
 - (UIViewController *)viewController
 {
-    return [[self.targetClass alloc] initWithNibName:NSStringFromClass(self.targetClass)
-                                              bundle:nil];
+    NSString* nibName = NSStringFromClass(self.targetClass);
+    NSArray* components = [nibName componentsSeparatedByString:@"."];
+    return [[self.targetClass alloc] initWithNibName:components.lastObject bundle:nil];
 }
 
 @end        // Framework
@@ -53,7 +55,8 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         frameworks =
-        @[[Framework frameworkWithName:@"Accounts.framework" target:[AccountsViewController class]]
+        @[[Framework frameworkWithName:@"Accounts.framework" target:[AccountsViewController class]],
+          [Framework frameworkWithName:@"AdSupport.framework" target:AdSupportViewController.self]
           ];
     });
     

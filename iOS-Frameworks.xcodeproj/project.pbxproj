@@ -11,6 +11,9 @@
 		DAC8D9711D66A69800374403 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC8D9701D66A69800374403 /* UIKit.framework */; };
 		DACFD8771D66B3E700D12C40 /* Accounts.png in Resources */ = {isa = PBXBuildFile; fileRef = DACFD8751D66B3E700D12C40 /* Accounts.png */; };
 		DACFD8781D66B3E700D12C40 /* Facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = DACFD8761D66B3E700D12C40 /* Facebook.png */; };
+		DACFD8801D66DCEC00D12C40 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACFD87F1D66DCEC00D12C40 /* AdSupport.framework */; };
+		DACFD8841D66DD1400D12C40 /* AdSupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACFD8821D66DD1400D12C40 /* AdSupportViewController.swift */; };
+		DACFD8851D66DD1400D12C40 /* AdSupportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DACFD8831D66DD1400D12C40 /* AdSupportViewController.xib */; };
 		DADC565E1D65B6FC0050F737 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DADC565D1D65B6FC0050F737 /* main.m */; };
 		DADC56611D65B6FC0050F737 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DADC56601D65B6FC0050F737 /* AppDelegate.m */; };
 		DADC56641D65B6FC0050F737 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DADC56631D65B6FC0050F737 /* ViewController.m */; };
@@ -30,6 +33,10 @@
 		DAC8D9701D66A69800374403 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DACFD8751D66B3E700D12C40 /* Accounts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Accounts.png; sourceTree = "<group>"; };
 		DACFD8761D66B3E700D12C40 /* Facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Facebook.png; sourceTree = "<group>"; };
+		DACFD87F1D66DCEC00D12C40 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		DACFD8821D66DD1400D12C40 /* AdSupportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdSupportViewController.swift; sourceTree = "<group>"; };
+		DACFD8831D66DD1400D12C40 /* AdSupportViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdSupportViewController.xib; sourceTree = "<group>"; };
+		DACFD8861D66DD3C00D12C40 /* iOS-Frameworks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS-Frameworks-Bridging-Header.h"; sourceTree = "<group>"; };
 		DADC56591D65B6FC0050F737 /* iOS-Frameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Frameworks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADC565D1D65B6FC0050F737 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DADC565F1D65B6FC0050F737 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -46,6 +53,7 @@
 		DADC567A1D65BA510050F737 /* AccountsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountsViewController.h; sourceTree = "<group>"; };
 		DADC567B1D65BA510050F737 /* AccountsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountsViewController.m; sourceTree = "<group>"; };
 		DADC567C1D65BA510050F737 /* AccountsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountsViewController.xib; sourceTree = "<group>"; };
+		DAF494A71D66E2E100E73136 /* iOS-Frameworks.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOS-Frameworks.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DACFD8801D66DCEC00D12C40 /* AdSupport.framework in Frameworks */,
 				DAC8D9711D66A69800374403 /* UIKit.framework in Frameworks */,
 				DADC56751D65B7080050F737 /* Accounts.framework in Frameworks */,
 				CDEBAAE10C89FDD6CA321A30 /* libPods-iOS-Frameworks.a in Frameworks */,
@@ -70,6 +79,15 @@
 			);
 			name = Pods;
 			sourceTree = "<group>";
+		};
+		DACFD87E1D66DCC300D12C40 /* AdSupport */ = {
+			isa = PBXGroup;
+			children = (
+				DACFD8821D66DD1400D12C40 /* AdSupportViewController.swift */,
+				DACFD8831D66DD1400D12C40 /* AdSupportViewController.xib */,
+			);
+			path = AdSupport;
+			sourceTree = SOURCE_ROOT;
 		};
 		DADC56501D65B6FC0050F737 = {
 			isa = PBXGroup;
@@ -92,6 +110,7 @@
 		DADC565B1D65B6FC0050F737 /* iOS-Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DACFD87E1D66DCC300D12C40 /* AdSupport */,
 				DADC56761D65B7270050F737 /* Accounts */,
 				DADC565F1D65B6FC0050F737 /* AppDelegate.h */,
 				DADC56601D65B6FC0050F737 /* AppDelegate.m */,
@@ -99,11 +118,13 @@
 				DADC56631D65B6FC0050F737 /* ViewController.m */,
 				DADC56771D65B84F0050F737 /* FrameworkDataSource.h */,
 				DADC56781D65B84F0050F737 /* FrameworkDataSource.m */,
+				DACFD8861D66DD3C00D12C40 /* iOS-Frameworks-Bridging-Header.h */,
 				DADC56651D65B6FC0050F737 /* Main.storyboard */,
 				DADC56681D65B6FC0050F737 /* Assets.xcassets */,
 				DADC566A1D65B6FC0050F737 /* LaunchScreen.storyboard */,
 				DADC566D1D65B6FC0050F737 /* Info.plist */,
 				DADC565C1D65B6FC0050F737 /* Supporting Files */,
+				DAF494A71D66E2E100E73136 /* iOS-Frameworks.pch */,
 			);
 			path = "iOS-Frameworks";
 			sourceTree = "<group>";
@@ -119,6 +140,7 @@
 		DADC56731D65B7080050F737 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DACFD87F1D66DCEC00D12C40 /* AdSupport.framework */,
 				DAC8D9701D66A69800374403 /* UIKit.framework */,
 				DADC56741D65B7080050F737 /* Accounts.framework */,
 				BF8E688BF5957EB54A046276 /* libPods-iOS-Frameworks.a */,
@@ -173,6 +195,7 @@
 					DADC56581D65B6FC0050F737 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 3LH7676BHR;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -200,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DACFD8851D66DD1400D12C40 /* AdSupportViewController.xib in Resources */,
 				DADC566C1D65B6FC0050F737 /* LaunchScreen.storyboard in Resources */,
 				DACFD8771D66B3E700D12C40 /* Accounts.png in Resources */,
 				DADC56691D65B6FC0050F737 /* Assets.xcassets in Resources */,
@@ -265,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DADC56641D65B6FC0050F737 /* ViewController.m in Sources */,
+				DACFD8841D66DD1400D12C40 /* AdSupportViewController.swift in Sources */,
 				DADC56791D65B84F0050F737 /* FrameworkDataSource.m in Sources */,
 				DADC56611D65B6FC0050F737 /* AppDelegate.m in Sources */,
 				DADC565E1D65B6FC0050F737 /* main.m in Sources */,
@@ -389,11 +414,16 @@
 			baseConfigurationReference = 89BABA19F675CA5D3A390012 /* Pods-iOS-Frameworks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3LH7676BHR;
+				GCC_PREFIX_HEADER = "iOS-Frameworks/iOS-Frameworks.pch";
 				INFOPLIST_FILE = "iOS-Frameworks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "X-Co.--Ltd..iOS-Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS-Frameworks/iOS-Frameworks-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -402,11 +432,15 @@
 			baseConfigurationReference = 5A25E42DACFF0BE5CF1AE4D5 /* Pods-iOS-Frameworks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 3LH7676BHR;
+				GCC_PREFIX_HEADER = "iOS-Frameworks/iOS-Frameworks.pch";
 				INFOPLIST_FILE = "iOS-Frameworks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "X-Co.--Ltd..iOS-Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS-Frameworks/iOS-Frameworks-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

@@ -1,0 +1,14 @@
+//
+//  iOS-Frameworks.pch
+//  iOS-Frameworks
+//
+//  Created by hzyuxiaohua on 8/19/16.
+//  Copyright © 2016 hzyuxiaohua. All rights reserved.
+//
+
+#ifndef iOS_Frameworks_pch
+#define iOS_Frameworks_pch
+
+#import "iOS_Frameworks-Swift.h"
+
+#endif /* iOS_Frameworks_pch */
